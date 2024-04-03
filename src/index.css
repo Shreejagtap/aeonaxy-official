@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation {
+  animation-name: slide;
+  animation-duration: 0.4s;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(100);
+  }
+  to {
+    transform: translate(0);
+  }
+}
