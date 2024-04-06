@@ -1,36 +1,40 @@
 import { useEffect, useState } from "react";
-import studentImage from "../assets/parents.png";
+import graphimg from "../assets/graph.png";
+import globe from "../assets/globe.png";
+import maths from "../assets/maths.png";
+import target from "../assets/target.png";
+import eyes from "../assets/eyes.png";
 import CommonCard from "./CommonCard";
 
 const Intrest = ({ setComponent, setPrevComponent, setWidth, loaderWidth }) => {
   const data = [
     {
       id: 1,
-      image: studentImage,
+      image: graphimg,
       title: "Learning specific skills to advance my career",
       subtitle: null,
     },
     {
       id: 2,
-      image: studentImage,
+      image: globe,
       title: "Exploring new topics I'm interested in",
       subtitle: null,
     },
     {
       id: 3,
-      image: studentImage,
+      image: maths,
       title: "Refreshing my math foundations",
       subtitle: null,
     },
     {
       id: 4,
-      image: studentImage,
+      image: target,
       title: "Exercising my brain to stay sharp",
       subtitle: null,
     },
     {
       id: 5,
-      image: studentImage,
+      image: eyes,
       title: "Something else",
       subtitle: null,
     },
@@ -41,7 +45,7 @@ const Intrest = ({ setComponent, setPrevComponent, setWidth, loaderWidth }) => {
   }, []);
   const [selected, setSelected] = useState(0);
   return (
-    <div className="mt-10">
+    <div className="mt-10 mx-4">
       <h2 className="text-4xl font-bold text-center">
         Which are you most interested in?
       </h2>

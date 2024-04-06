@@ -1,6 +1,9 @@
 import studentimage from "../../assets/student.png";
 import professionalimage from "../../assets/professional.png";
 import parent from "../../assets/parents.png";
+import learner from "../../assets/learner.png";
+import teacher from "../../assets/teacher.png";
+import other from "../../assets/other.png";
 import CommonCard from "../CommonCard";
 import { useState } from "react";
 
@@ -25,19 +28,19 @@ const data = [
   },
   {
     id: 4,
-    image: studentimage,
+    image: learner,
     title: "Lifelong Learner",
     subtitle: null,
   },
   {
     id: 5,
-    image: studentimage,
+    image: teacher,
     title: "Teacher",
     subtitle: null,
   },
   {
     id: 6,
-    image: studentimage,
+    image: other,
     title: "Other",
     subtitle: null,
   },
@@ -47,7 +50,7 @@ const Describe = ({ setComponent, setWidth, loaderWidth }) => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 mx-4">
       <h2 className="text-4xl font-bold text-center">
         Which describes you best?
       </h2>

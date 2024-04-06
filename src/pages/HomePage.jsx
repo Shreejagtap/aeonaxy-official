@@ -4,14 +4,15 @@ import Describe from "../components/Describe/Describe";
 import Intrest from "../components/Intrest";
 import RightPlace from "../components/RightPlace";
 import ComfortLevel from "../components/ComfortLevel";
+import OnYourWay from "../components/OnYourWay";
 
 const HomePage = () => {
   const [components, setComponents] = useState("describe");
   const [prevComponent, setPrevComponent] = useState(null);
   const [loaderWidth, setLoaderWidth] = useState(20);
   return (
-    <div>
-      <div className=" m-auto mt-16 w-[70vw] flex gap-2 items-center">
+    <div className="my-10 md:my-auto">
+      <div className=" m-auto mt-16 mx-4 md:mx-auto md:w-[80vw] lg:w-[70vw] flex gap-2 items-center">
         {components !== "describe" && (
           <button
             onClick={() => {
@@ -59,6 +60,9 @@ const HomePage = () => {
           setWidth={setLoaderWidth}
           loaderWidth={loaderWidth}
         />
+      )}
+      {components === "onyourway" && (
+        <OnYourWay setPrevComponent={setPrevComponent} />
       )}
     </div>
   );

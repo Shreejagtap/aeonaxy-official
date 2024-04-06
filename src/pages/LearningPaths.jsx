@@ -1,4 +1,6 @@
 import { useState } from "react";
+import LoadingComponent from "../components/LearningPage/LoadingComponent";
+import MainComponent from "../components/LearningPage/MainComponent";
 
 const LearningPaths = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -7,6 +9,6 @@ const LearningPaths = () => {
     setIsLoading(false);
   }, 2000);
 
-  return <>{isLoading ? <h2>Loading</h2> : <h2>done Loading</h2>}</>;
+  return <>{isLoading ? <LoadingComponent /> : <MainComponent />}</>;
 };
 export default LearningPaths;

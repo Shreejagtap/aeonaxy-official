@@ -11,8 +11,8 @@ const RightPlace = ({
     setPrevComponent("intrest");
   }, []);
   return (
-    <div className="mt-10 w-[70vw] m-auto">
-      <div className="flex items-center my-32 mx-24">
+    <div className="mt-10 mx-4 md:mx-auto lg:w-[90vw] xl:w-[70vw] m-auto">
+      <div className="flex items-center my-32 md:mx-20 flex-col lg:flex-row ">
         <img
           src={rightplace}
           alt=""
@@ -20,8 +20,10 @@ const RightPlace = ({
           className="flex-1"
         />
         <div className="flex-1">
-          <h2 className="text-4xl font-bold">You're in the right place</h2>
-          <p className="mt-8 text-lg font-semibold text-[#575757]">
+          <h2 className="text-4xl font-bold text-center lg:text-start">
+            You're in the right place
+          </h2>
+          <p className="mt-8 text-lg font-semibold text-[#575757] text-center lg:text-start">
             Brilliant gets you hands-on to help improve your professional skills
             and knowledge. You'll interact with concepts and solve fun problems
             in math, science, and computer science
